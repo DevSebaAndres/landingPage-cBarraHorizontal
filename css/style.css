@@ -1,0 +1,112 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+/* Barra lateral */
+
+.social{
+    position:fixed;
+    left:0;
+    top:200px;
+    z-index:2000; /* usamos esto para que no se superponga con otros elementos */
+}
+
+.social ul{
+list-style: none;
+}
+
+.social ul li a{
+    display:inline-block;
+    color:white;
+    background-color: black;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: all 500ms ease-in-out;
+}
+
+.social ul li .icon-facebook2{background-color:#3b5998 ;}
+.social ul li .icon-instagram{background-color:#405DE6  ;}
+.social ul li .icon-twitter{background-color:#00acee ;}
+.social ul li .icon-whatsapp{background-color: #128C7E;}
+.social ul li .icon-youtube{background-color:#c4302b ;}
+.social ul li .icon-mail{background-color: #c4302b;}
+
+.social ul li a:hover{
+    padding: 10px/* top/bottom */ 30px/* left/right */;
+    background-color: black;
+}
+
+
+/* barra */
+
+/* colores
+#A68365
+#BFAE9F
+#8C5B3F
+#261914
+#592F25
+
+*/
+
+.list-element{
+    list-style: none;
+    text-decoration: none;
+    color:#A68365;
+}
+
+.list-element:hover{
+    background-color:#BFAE9F ;
+    color:white;
+    transition:all 0.5s ease;
+}
+
+
+/* MAIN */
+
+.bordeados{
+    border: 2px solid #592F25;
+}
+
+
+.vision-mision-valores:hover{
+    background-color:#8C5B3F ;
+    color:white;
+    transition: all 500ms ease-out;
+}
+
+.texto{
+    color:#8C5B3F;
+}
+
+/* footer */
+
+.futer{
+    background-color:#A68365 ;
+}
+
+.social-media{
+    display:flex;
+    flex-direction: column;
+}
+
+.correo{
+    list-style: none;
+    text-decoration: none;
+    color:black;
+}
+
+@media screen and(max-width:480px) {
+
+    .futer{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .copy{
+        padding-top:80px;
+    }
+    
+}
